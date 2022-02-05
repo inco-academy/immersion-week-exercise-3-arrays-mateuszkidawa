@@ -1,5 +1,14 @@
-module.exports = function evenIndexes() {
+module.exports = evenIndexes
+
+function evenIndexes(word) {
   // TODO Implement me.
+  let arr=[];
+  for(let i=0; i<=word.length; i++){
+    if(i%2==0){
+      arr.push(word[i])
+    }
+  }
+  return arr;
 };
 
 /**Weryfikacja */
